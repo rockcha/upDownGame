@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,16 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" src="index.js"></script>
-    <title>Document</title>
+    <title>숫자 맞추기 게임</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <h2>숫자 맞추기 게임</h2>
+
+      <div class="result" id="result">숫자를 아래에 입력하세요..</div>
+      <input id="input" type="number" placeholder="" />
+      <p>남은 기회: <span id="chances"> 5</span></p>
+      <button class="btn" id="start-btn" type="button">시작</button>
+    </div>
+  </body>
 </html>

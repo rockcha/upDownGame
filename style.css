@@ -33,4 +33,86 @@
 body {
   height: 100vh;
   background: var(--app-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: min(500px, 92vw);
+
+  background: whitesmoke;
+
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.wrap h2 {
+  width: 100%;
+  padding: 2rem;
+  background: lightpink;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+.result {
+  font-size: 20px;
+  color: gray;
+}
+
+.result.up {
+  color: lightblue;
+  font-weight: 800;
+}
+.result.down {
+  color: lightpink;
+  font-weight: 800;
+}
+
+.result.correct {
+  color: yellowgreen;
+  font-weight: 800;
+}
+.result.warn {
+  color: red;
+  font-weight: 800;
+}
+
+#input {
+  padding: 1rem;
+  background: aliceblue;
+  border: 2px solid gray;
+  outline: none;
+}
+
+#input:focus {
+  outline: 3px solid gray;
+}
+#start-btn {
+  border: none;
+  background: lightgray;
+  font-size: 20px;
+  padding: 1rem 1.8rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+
+  pointer-events: none;
+  filter: grayscale(0.6);
 }
